@@ -1,1 +1,1 @@
-print("Main application")
+print("Welcome to To-Do Application")
