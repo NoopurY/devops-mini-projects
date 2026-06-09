@@ -21,3 +21,7 @@ def delete_task(index):
 
 if __name__ == "__main__":
     print("Simple To-Do App")
+
+if __name__ == "__main__":
+    print("Simple To-Do App")
+    add_task("Learn Git")
