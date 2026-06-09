@@ -19,14 +19,10 @@ def delete_task(index):
     else:
         print("Invalid task number")
 
-
 if __name__ == "__main__":
     print("Simple To-Do App")
-    print("Welcome to To-Do Application")
-
-    # sample run (demo flow)
     add_task("Learn Git")
+    add_task("Learn Docker")
     view_tasks()
-
     delete_task(1)
     view_tasks()
