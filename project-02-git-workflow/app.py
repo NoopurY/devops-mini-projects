@@ -21,9 +21,12 @@ def delete_task(index):
 
 
 if __name__ == "__main__":
-    print("Welcome to To-Do Application")
     print("Simple To-Do App")
+    print("Welcome to To-Do Application")
 
-    # sample run (you can remove this later if you build menu system)
+    # sample run (demo flow)
     add_task("Learn Git")
+    view_tasks()
+
+    delete_task(1)
     view_tasks()
