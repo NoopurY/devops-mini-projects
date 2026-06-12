@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Docker Full Stack App</title>
+</head>
+<body>
+    <h1>🚀 Frontend is Working!</h1>
+
+    <button onclick="fetchData()">Call Backend</button>
+
+    <p id="output"></p>
+
+    <script>
+        function fetchData() {
+            fetch('/api')
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById("output").innerText =
+                    JSON.stringify(data, null, 2);
+            })
+            .catch(err => {
+                document.getElementById("output").innerText =
+                    "Error: " + err;
+            });
+        }
+    </script>
+</body>
+</html>
